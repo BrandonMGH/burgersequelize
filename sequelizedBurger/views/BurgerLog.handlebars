@@ -1,0 +1,72 @@
+<div class="container header">
+    <div class="row">
+        <div class='col-sm-4'></div>
+        <div class='col-sm-4'>
+            <img class='wimpyImage' src="../assets/img/wimpy.png" alt="Smiley face">
+        </div>
+        <div class='col-sm-4'></div>
+    </div>
+
+    <div class="row textHeader">
+        <div class='col-sm-4'>
+        </div>
+        <div class='col-sm-4'>
+            <h1>WANT-A-BURGER?!?</h1>
+        </div>
+        <div class='col-sm-4'>
+        </div>
+    </div>
+
+    <form action="/api/burger" method="POST" class="burgerinput">
+        <div class="form-group">
+            <label for="Burger_Name">Burger</label>
+            <input type="text" class="form-control" name="Burger_Name" placeholder="Enter Burger Name" required>
+        </div>
+        <button type="submit" class="btn btn-light buttonText">Submit</button>
+    </form>
+    <div class="container tableColor">
+        <div class="row">
+            <div class="col-sm-6">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Burger</th>
+                            <th scope="col">Devour!!!</th>
+                            <th scope="col">Remove</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table1">
+                        {{#each burgers}}
+                        {{#unless devoured}}
+                        <tr>
+                            <td>{{this.Burger_Name}}</td>
+                            <td><button name="id" class="fav-burger" data-id={{this.id}}>Devour</button></td>
+                        </tr>
+                        {{/unless}}
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+            {{!-- <div class="col-sm-4">
+            <img class='burgerImage' src="../assets/img/cartoon-burger-clipart-1.jpg" alt="Smiley face">
+        </div> --}}
+            <div class="col-sm-6 devoured">
+                <table class="table">
+                    <thead>
+                        <th scope="col">DEVOURED!</th>
+                    </thead>
+                    <tbody class="table2">
+                        {{#each burgers}}
+                        {{#if devoured}}
+                        <tr>
+                            <td>{{this.burger_name}}</td>
+    
+                        </tr>
+                        {{/if}}
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

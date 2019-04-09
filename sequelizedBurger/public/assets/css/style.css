@@ -1,0 +1,66 @@
+body {
+    background-color: red;
+    font-family: 'Gloria Hallelujah', cursive;
+   
+}
+
+h1 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: bold;
+    font-size: 2.5rem;
+    
+}
+
+.maxHeader {
+    background-color: white;
+    max-width: 1500px; 
+}
+
+.header {
+    max-width: 1400px; 
+}
+
+.wimpyImage {
+margin-bottom: 20px
+}
+
+.tableColor{
+    color: red; 
+}
+
+
+.burgerImage {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px; 
+    width: 15em;
+}
+
+.burgerinput {
+    background-color: red;
+    color: white;
+    margin-bottom: 20px; 
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.textRed, .buttonText {
+    color: red; 
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+
+.burgerinput {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px; 
+    width: 70em;
+  }
+
+.table2 {
+    text-decoration: line-through;
+    opacity: 0.5;
+
+}
+
