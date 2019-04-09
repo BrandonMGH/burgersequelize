@@ -1,4 +1,4 @@
-**Section 15  EAT-DA-BURGER APP**
+**Section 15  EAT-DA-BURGER APP SEQUELIZE**
 
 
 **Assignment Details:**
